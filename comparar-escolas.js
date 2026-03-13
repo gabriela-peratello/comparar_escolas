@@ -1,4 +1,7 @@
-const cidadeA = document.querySelectorAll()
+
+const unidades = document.querySelectorAll('.unidade input[type="button"]')
+console.log(unidadesnidades);
+const uniAcoes = document.querySelectorAll('.unidade_acoes input[typ="button"]')
 
 
 /* 🚨NÃO ALTERAR A CLASSE 🚨 */
@@ -22,29 +25,25 @@ class Senai {
     this.statusFuncionamento = false;
   }
 
+  // Exibir informações formatadas
   dadosEscolas(){
-    console.log(`Cidade: ${}`)
+    console.log(
+
+    )
   }
 
-
- 
 }
+
+const escolaA = new Senai ()
+const escolaB = new Senai ()
 
 /* 🚨NÃO ALTERAR A CLASSE 🚨 */
 /* SUGESTÃO DE LÓGICA PARA O DESENVOLVIMENTO */
 
 /* ===== OBTER ELEMENTOS ===== */
 
-const uniA = new Senai(${})
-const uniB = new Senai()
-
-uniA.infoEscolas();
-
-
 /* ===== FUNÇÃO DE VALIDAÇÃO ===== */
-function validarEscolas(){
-  if
-}
+
 
 
 /* ===== INSTANCIAR ESCOLA A ===== */
@@ -60,8 +59,19 @@ function validarEscolas(){
 
 
 /* ===== RELATÓRIO DE COMPARAÇÃO ===== */
-const comparaEscola = (uniA, uniB) =>
-  console.log(`Comparando`)
+const compararEscolas = (escolaA, escolaB) =>
+  console.log(`> Comparando ofertas de cursos: ${escolaA.cidade} VS ${escolaB.cidade}`);
+
+  if (escolaA.qtdeCursos > escolaB.qtdeCursos){
+      console.log(`Resultado: O SENAI ${escolaA.cidade} possui mais cursos.`);
+  }else if (escolaA.qtdeCursos > escolaB.qtdeCursos){
+      console.log(`Resultado: o SENAI ${escolaB.cidade} possui mais cursos.`);
+  }else{
+      console.log(`Resultado: Ambas as escolas possuem a mesma quantidade de cursos.`);
+  }
+  console.log(`Status: ${escolaA.cidade} (${escolaA.qtdeCursos}) | ${escolaB.cidade} (${escolaB.qtdeCursos})\n`)
+
+
 
 /* ===== NOVA CONSULTA ===== */
 
